@@ -1,1 +1,1 @@
-const msg = "hello";
+module.exports = "hello";
