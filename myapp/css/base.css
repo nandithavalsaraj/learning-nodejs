@@ -1,0 +1,598 @@
+*{
+	position: absolute;
+}
+
+*:before,
+*:after {
+  content: "";
+  position: absolute; }
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body{
+	margin: 0%;
+	padding: 0%;
+}
+.background{
+	z-index: -1;
+	width: 100%;
+  height: 100%;
+}
+.base-top-section{
+	height: 77%;
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+  top: 0%;
+}
+
+.base-bottom-section{
+  background-color: #a86220;
+  top: 75%;
+  height: 25%;
+  width: 100%;
+  bottom: 0%;
+  margin: 0%;
+  padding: 0%;
+  z-index: -1;
+}
+
+.sky {
+  background-image: linear-gradient(#216fbf 0%, #3b7cbf 10%, #68e2fc 60%, #75e2fa 90%);
+  width: 100%;
+  height: 55%;
+  z-index: -1; 
+  top: 0%;
+
+}
+
+.grass {
+  background: #29284c;
+  background-image: linear-gradient(#75e2fa 0%, #0e8f77 10%, #22ba64 60%, green 90%);
+  width: 100%;
+  height: 45%;
+  z-index: -1; 
+  top: 55%;
+  }
+
+
+
+/*Top layer objects*/
+.container{
+  left: 2%;
+  width: 30%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.cloud1, .cloud2, .cloud3{
+  border-radius: 560%;
+  background-color: white;
+  height: 30%;	
+  width: 60%;
+}
+
+.sun{
+  left: 30%;
+  top: 30%;
+  width: 160px;
+  height: 160px;
+}
+.circle{
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 30px;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px #fad775, 0 0 100px orange; 
+}
+
+.rays{
+  z-index: -1;
+  top: 30px;
+  left: 30px;
+}
+.ray1, .ray2, .ray3, .ray4, .ray5, .ray6{
+  border-bottom : 30px solid orange;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.ray1{
+  left: 35px;
+  top: -25px;
+  transform: rotate(0deg);
+}
+.ray2{
+  left: 35px;
+  top: 95px;
+  transform: rotate(180deg);
+}
+.ray3{
+  left: 86px;
+  transform: rotate(60deg);
+}
+.ray4{
+  left: -15px;
+  transform: rotate(-60deg);
+}
+.ray5{
+  left: -16px;
+  top: 68px;
+  transform: rotate(-129deg);
+}
+.ray6{
+  left: 86px;
+  top: 70px;
+  transform: rotate(129deg);
+}
+
+.sun {
+  -webkit-animation: rotation 5s linear infinite;
+  -moz-animation:    rotation 5s linear infinite; 
+  -o-animation:      rotation 5s linear infinite; 
+  animation:         rotation 5s linear infinite; 
+}
+
+
+-webkit-@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+-moz-@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+-o-@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+
+
+
+
+.container2{
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  width: 15%;
+  bottom: 0%;
+  left: 0%;
+  z-index: -1;}
+
+.cat{
+  bottom: 0%;
+  left: 20%;
+  height: 160px;
+  width: 100px;
+}
+
+.face{
+  background-color: #33292b;
+  height: 25%;
+  width: 60%;
+  border-radius: 30%;
+  bottom: 40%;
+  left: 40%;
+}
+
+.ear-left, .ear-right{
+  height: 0%;
+  width: 0%;
+  border-bottom: 1em solid #33292b;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  top: -20%;
+  z-index: -1;
+}
+
+.ear-left{
+  transform: rotate(-30deg);
+}
+
+.ear-right{
+  left: 67%;
+  transform: rotate(30deg);
+}
+
+.inner-left-ear{
+  width: 0%;
+  height: 0%;
+  border-left: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+  right: 5%;
+}
+
+.inner-right-ear{
+  width: 0%;
+  height: 0%;
+  border-right: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+}
+
+.eye-left, .eye-right{
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #d2873b;
+
+}
+
+.eye-left{
+  top: 20%;
+  left: 15%;
+}
+
+.eye-right{
+  top: 20%;
+  left: 54%;
+}
+
+.eyeball{
+   width: 80%;
+   height: 80%;
+   border-radius: 50%;
+   background-color: #262626;
+   top: 5%;
+   left: 8%;
+   -webkit-transform-origin: 50%;
+   -webkit-animation: blink 2s infinite;
+}
+
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+
+.nose{
+  height: 0%;
+  width: 0%;
+  border-top: 0.4em solid #d36149;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  top: 54%;
+  left: 42%;
+}
+
+.body {
+  height: 35%;
+  width: 70%;
+  background-color: #33292b;
+  border-radius: 65% 0 0  0;
+  bottom: 5%;
+  left: 15%;
+}
+
+.paw-left, .paw-right{
+  background-color: #33292b;
+  height: 15%;
+  width: 25%;
+  border-radius: 0 0 50% 50%;
+}
+.paw-left{
+  bottom: -14%;
+}
+
+.paw-right{
+  bottom: -14%;
+  left: 60%;
+}
+
+.tail{
+  background-color: #33292b;
+  width: 60%;
+  height: 15%;
+  bottom: 5%;
+  left: -60%;
+  border-radius:25% 0 0 25%;
+}
+
+
+
+
+.container3{
+  
+  height: 100%;
+  width: 30%;
+  bottom: 25%;
+  left: 50%;
+  z-index: -1;
+}
+.tree{
+  height: 240px;
+  width: 300px;
+  z-index:-1;
+}
+.leaves{
+  height: 60%;
+  width: 70%;
+}
+.leaves1, .leaves2, .leaves3, .leaves4, .leaves5, .leaves6, .leaves7, .leaves8{
+  border-radius: 50%;
+  background-color: green;
+}
+
+.leaves1{
+  left: 75%;
+  top: 30%;
+  height: 70%;	
+  width: 60%;
+}
+.leaves2{
+  left: 32%;
+  top: -28%;
+  height: 70%;	
+  width: 60%;
+}
+.leaves3{
+  left: 95%;
+  top: -40%;
+   height: 70%;	
+  width: 60%;
+}
+
+.leaves4{
+  left: 60%;
+  top: -100%;
+   height: 70%;	
+  width: 60%;
+}
+.leaves5{
+  left: 20%;
+  top: -156%;
+   height: 70%;	
+  width: 60%;
+}
+.leaves6{
+  left: 100%;
+  top: -180%;
+   height: 70%;	
+  width: 60%;
+}
+.leaves7{
+  left: -6%;
+  top: -80%;
+   height: 55%;	
+  width: 50%;
+}
+
+.leaves8{
+  left: -6%;
+  top: -5%;
+   height: 55%;	
+  width: 50%;
+}
+
+.branches{
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+}
+.branch1, .branch2, .branch3, .branch4, .branch5, .branch6, .branch7{
+  background-color: #7a4506;
+}
+.branch1{
+  left: 65%;
+  top: 120%;
+  width: 8%;
+  height: 130%;
+}
+.shade{
+	left: 0%;
+  	top: 0%;
+	height: 100%;
+	width: 100%;
+}
+.shade1, .shade2, .shade3, .shade4, .shade5{
+  width: 3%;
+  height: 100%;
+  background-color: black;
+}
+.shade1{
+  left: 0%;
+}
+.shade2{
+  left: 8%;
+}
+.shade3{
+  left: 15%;
+}
+.shade4{
+  left: 25%;
+}
+.shade5{
+  left: 39%;
+}
+.branch2{
+  top: 30%;
+  left: 50%;
+  transform: rotate(-30deg);
+  width: 3%;
+  height: 60%;
+}
+.branch3{
+  left: 80%;
+  transform: rotate(30deg); 
+  top: 0%;
+  width: 3%;
+  height: 60%;
+}
+.branch4{
+  left: 75%;
+  transform: rotate(30deg); 
+  top: -175%;
+  width: 3%;
+  height: 60%;
+}
+.branch5{
+  left: 50%;
+  transform: rotate(-30deg); 
+  top: -190%;
+  width: 3%;
+  height: 60%;
+}
+.branch6{
+  left: 80%;
+  transform: rotate(-20deg); 
+  top: -80%;
+  width: 3%;
+  height: 60%;
+}
+
+.branch7{
+  left: 33%;
+  transform: rotate(-50deg); 
+  top: -65%;
+  width: 3%;
+  height: 60%;
+}
+
+
+
+
+/*Data content Style*/
+.data-sec{
+	left: 20%;
+	bottom: 3%;
+	height: 30%;
+	width: 100%;
+  margin: 0%;
+  padding: 0%
+}
+
+
+.data-about{
+  height: 25%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+  left: 0%;
+  background-image: url(../images/bricks.jpg);
+  background-size: 8em;
+  border: thick solid brown;
+  border-bottom: none;
+
+}
+.data-resume{
+  height: 25%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: yellow;
+  cursor: pointer;
+  left: 15%;
+  background-image: url(../images/bricks.jpg);
+  background-size: 8em;
+  border: thick solid brown;
+  border-bottom: none;
+}
+.data-linkdIn{
+  height: 25%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: purple;
+  cursor: pointer;
+  left: 30%;
+  background-image: url(../images/bricks.jpg);
+  background-size: 8em;
+  border: thick solid brown;
+  border-bottom: none;
+}
+.data-gitInfo{
+  height: 25%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: orange;
+  cursor: pointer;
+  left: 45%;
+  background-image: url(../images/bricks.jpg);
+  background-size: 8em;
+  border: thick solid brown;
+  border-bottom: none;
+}
+.data-contact{
+  height: 25%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: grey;
+  cursor: pointer;
+  left: 60%;
+  background-image: url(../images/bricks.jpg);
+  background-size: 8em;
+  border-color: thick solid black;
+  border: thick solid brown;
+  border-bottom: none; 
+}
+
+
+
+
+
+
+.grassstalks{
+
+}
+.worm1{
+
+}
+.worm2{
+	
+}
+.worm3{
+	
+}
+
+
+
+.container4{
+  height: 100%;
+  width: 30%;
+  bottom: 25%;
+  left: 70%;
+  z-index: -2;
+}
+.container5{
+  
+  height: 100%;
+  width: 30%;
+  bottom: 25%;
+  left: 30%;
+  z-index: -2;
+}

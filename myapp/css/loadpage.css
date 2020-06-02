@@ -1,0 +1,188 @@
+*{
+	position: absolute;
+}
+
+html,
+body{
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.background{
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#216fbf 0%, #3b7cbf 10%, #68e2fc 60%, #75e2fa 90%);
+}
+
+.wall{
+	top: 50%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/bricks2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    border-top: thick solid darkred;
+    opacity: 90%; 
+}
+
+.cat{
+  bottom: 50%;
+  left: 0%;
+  height: 160px;
+  width: 100px;
+  animation: myfirst 5s linear 2s infinite;
+}
+
+.face{
+  height: 25%;
+  width: 60%;
+  bottom: 40%;
+  left: 40%;
+}
+.face-base{
+  background-color: #33292b;
+  height: 100%;
+  width: 100%;
+  border-radius: 30%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.ear-left, .ear-right{
+  height: 0%;
+  width: 0%;
+  border-bottom: 1em solid #33292b;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  top: -20%;
+}
+
+.ear-left{
+  transform: rotate(-30deg);
+}
+
+.ear-right{
+  left: 67%;
+  transform: rotate(30deg);
+}
+
+.inner-left-ear{
+  width: 0%;
+  height: 0%;
+  border-left: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+  right: 5%;
+}
+
+.inner-right-ear{
+  width: 0%;
+  height: 0%;
+  border-right: 0.5em solid transparent;
+  border-bottom: 1em solid #d36249;
+}
+
+.eye-left, .eye-right{
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #d2873b;
+
+}
+
+.eye-left{
+  top: 20%;
+  left: 15%;
+}
+
+.eye-right{
+  top: 20%;
+  left: 54%;
+}
+
+.eyeball{
+   width: 80%;
+   height: 80%;
+   border-radius: 50%;
+   background-color: #262626;
+   top: 5%;
+   left: 8%;
+   -webkit-transform-origin: 50%;
+   -webkit-animation: blink 2s infinite;
+}
+
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+.nose{
+  height: 0%;
+  width: 0%;
+  border-top: 0.4em solid #d36149;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  top: 54%;
+  left: 42%;
+}
+
+.body {
+  height: 35%;
+  width: 70%;
+  background-color: #33292b;
+  border-radius: 65% 0 0  0;
+  bottom: 5%;
+  left: 15%;
+}
+
+.paw-left, .paw-right{
+  background-color: #33292b;
+  height: 15%;
+  width: 25%;
+  border-radius: 0 0 50% 50%;
+}
+.paw-left{
+  bottom: -14%;
+}
+
+.paw-right{
+  bottom: -14%;
+  left: 60%;
+}
+
+.tail{
+  background-color: #33292b;
+  width: 60%;
+  height: 15%;
+  bottom: 5%;
+  left: -60%;
+  border-radius:25% 0 0 25%;
+}
+
+@keyframes fadeout{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+
+@keyframes myfirst {
+  0%   {left:0%; }
+  25%  {left:25%; }
+  50%  {left:50%; }
+  75%  {left:75%; }
+  100% {left:100%; }
+}
